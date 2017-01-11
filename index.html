@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <title>Force Application</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <h1>Force User Sign-Up Form</h1>
+  <form action="http://requestb.in/1ntrlpa1" method="post">
+    <fieldset>
+      <legend>Basic Info</legend>
+      <label for="your-name"> Your Name</label>
+      <input id="your-name" type="text" placeholder="Full Name" name="name" required>
+      <label for="profile-pic">Profile Pic</label>
+      <input id="profile-pic" type="file" name="pic" accept="image/*">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="jordan@jedi.com" name="email" required>
+      <label for="side"> Side: </label>
+      <input id="side" type="radio" value="Light" name="side">Light
+      <input id="side" type="radio" value="Dark" name="side">Dark
+      <label for="origin-story">Origin Story</label>
+      <textarea id="origin-story" name="origin-story" required></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Abilities</legend>
+      <label for="lightsaber-color">Lightsaber Color</label>
+      <select id="lightsaber-color" name="lightsaber-color" value="Select Color" name="lightsaber-color">
+        <option value="" disabled selected>Select your color</option>
+        <option>Green</option>
+        <option>Red</option>
+        <option>Purple</option>
+        <option>Blue</option>
+      </select>
+      <label for="ability">Favorite Ability</label>
+      <input id="ability" type="text" placeholder="precognition" name="fav-ability">
+      <label for="levitation">How many objects can you levitate at once?</label>
+      <input id="levitation" type="number" min="0" max="100" name="obj-lev" value="2">
+      <label>Pilot Experience</label>
+      <div class="checkboxes">
+        <ul>
+          <li>
+            <label for="speeder">Speeder</label>
+            <input id="speeder" type="checkbox" name="speeder">
+          </li>
+          <li>
+            <label for="transport">Transport</label>
+            <input id="transport" type="checkbox" name="transport">
+          </li>
+          <li>
+            <label for="x-wing">X-Wing</label>
+            <input id="x-wing" type="checkbox" name="x-wing">
+          </li>
+          <li>
+            <label for="tie-fighter">TIE Fighter</label>
+            <input id="tie-fighter" type="checkbox" name="tie-fighter">
+          </li>
+          <li>
+            <label for="starship">Starship</label>
+            <input id="starship" type="checkbox" name="starship">
+          </li>
+          <li>
+            <label for="bantha">Bantha</label>
+            <input id="bantha" type="checkbox" name="bantha">
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Application Info</legend>
+      <label for="mentor"> Desired Mentor</label>
+      <input id="mentor" type="text" placeholder="Yoda" name="mentor">
+      <label for="date">Application Date</label>
+      <input id="date" type="date" name="date" value="2017-01-01" required>
+      <label for="password"> Application Password</label>
+      <input id="password" type="password" size="25" name="pass" required>
+      <label for="darkside"> How do you get to the dark side?</label>
+      <textarea id="darkside" name="dark-side"></textarea>
+      <br>
+      <input class="end-app" type="reset" value="Start Over">
+      <input class="end-app" type="submit" value="Apply">
+    </fieldset>
+  </form>
+  <footer>
+    <span>&copy; 2016 The Republic</span>
+  </footer>
+</body>
+</html>
